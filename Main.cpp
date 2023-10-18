@@ -12,7 +12,6 @@ using namespace std;
 int main(){
 
     Stack s;
-    char operators;
 
     do{
         s.exit = false;
