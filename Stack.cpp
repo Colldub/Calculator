@@ -56,7 +56,7 @@ double Stack::peek(){ //returns top value of stack
 
 void Stack::DisplayTop(){ //prints out the top of the stack along with a '>'
     if(top != NULL){
-        cout << top->data << "> ";
+        cout << "RPN " << top->data << " > ";
     }else{
         return;
     }
