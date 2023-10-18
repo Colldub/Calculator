@@ -1,0 +1,41 @@
+/*
+	Calculator Assignment	CS 121
+	Program_Log File
+	
+	Collin Worth	10-15-2023
+*/
+functions:
+addition, multiplication, subtraction, division, square, square root, dup, swap, ps, quit;
+
+//steps
+	encounter operator
+	pop the appropriate number of nubmers from the stack
+	perform the operation
+	push result on stack
+
+Designing what should be in my loop
+
+//loop
+	get input from user
+		if exit statment set "exit = false;"
+	perform oporations
+		send to appropriate function
+	display stack
+
+	ReciveAndDecide(); //recives input from user and returns the char for which ever function to perform
+	ActivateFunction(); //takes the char for which function is being perfomed and calls the appropriate one
+		Add(); //takes no input pops twice from stack perfoms the funciton stated and then puts in on the stack
+	DisplayTop(); //prints out top of the stack
+
+
+//10-18 
+	coosing to combine the push functions and perfom so that it sends it to the function desider inside of the push function
+	by doing this i can perform multiple special actions from one line.
+
+-Problem
+	i tried to design the seperation of the users statment before i decieded the best way to call the appropriate functions
+	this was a mistake because then i had to deconstruct it into peices for how i actually wanted to implitment the OperateFunc() function
+	
+
+
+	

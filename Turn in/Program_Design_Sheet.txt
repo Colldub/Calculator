@@ -1,0 +1,42 @@
+/*
+	Calculator Assignment	CS 121
+	Program_Design_Sheet File
+	
+	Collin Worth	10-15-2023
+*/
+
+The assignment is to write an RPN calculator that implements the four basic math functions (addition, 
+multiplication, subtraction, and division) and the following special functions: sq (square), sqrt (square root), 
+dup (duplicates the top of the stack), swap (swaps the top two elements of the stack), ps (print stack), and 
+quit (exits your program). All numbers should be stored/manipulated as double. All appropriate error
+checking should be performed including invalid operations. The program should loop continuously for input 
+until terminated with the quit keyword. The user interface should model the application demonstrated above exactly.
+Particularly note that input is processed a line at a time.
+
+The value on the top of the stack is displayed at all times as a prompt to the user input. When you encounter an 
+operator you pop the appropriate number of numbers from the stack, perform the operation, then push the result back
+on the stack. For example, to calculate 3.2 + 2.4 on an RPN calculator you would enter:
+
+///////////////////////////////////// Basic functions for stack ///////////////
+	void push(double);
+		// Takes a double argument and inserts it onto the stack
+
+    double pop();
+		// returns a double from the top of the stack and then deletes it from the stack
+
+    double peek();
+		// returns a double from the top of the stack but doesnt delete it
+
+	void Delete();
+		// deletes all values and top pointer 
+
+//////////////////////////////////// Assignment based functions ///////////////////
+    void PushAndSend(Stack&);
+		//
+
+    void OperateFunc(Stack&, string);
+		// 
+
+    void DisplayTop();
+		//
+
