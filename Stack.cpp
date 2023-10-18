@@ -103,11 +103,15 @@ void Stack::OperateFunc(Stack& s, string str) { //takes in a string for the oper
             Node* tempPtr = new Node;
             tempPtr = top; //saves position of top for later
 
+            cout << "Stack Contents: ";
+
             while(top != NULL){
-                cout << s.peek();
+                cout << " " << s.peek();
                 top = top->next;
             }
             top = tempPtr; //returns top back to top
+
+            cout << endl;
         }                                                             //functions that require poped vals  
         //////////////////////////////////////////////////////////////////////////////
         double val1 = s.pop();
@@ -139,6 +143,9 @@ void Stack::OperateFunc(Stack& s, string str) { //takes in a string for the oper
         }else if(str == "*"){
                 s.push(val1 * val2);
 
+        }else{ //if none of the functions were touched return the two values
+            s.push(val2);
+            s.push(val1);
         }
 }
 
