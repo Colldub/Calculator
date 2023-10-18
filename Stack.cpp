@@ -69,11 +69,8 @@ void Stack::PushAndSend(Stack& s){ //asks for a cin, pushes any doubles onto the
     double dVal;
     string cString;
     
-    cout << ">";
     getline(cin, input);
-    //cout << "input: " << input;
     input += " ~";
-    //cout << "input: " << input;
 
     for(char c : input){
 
@@ -81,7 +78,6 @@ void Stack::PushAndSend(Stack& s){ //asks for a cin, pushes any doubles onto the
 
             if(isdigit(cString[0])){
                 dVal = stod(cString);
-                cout << "dval: " << dVal << endl;
                 s.push(dVal);
                 cString.clear();
             }else if(cString == "~"){
@@ -89,12 +85,10 @@ void Stack::PushAndSend(Stack& s){ //asks for a cin, pushes any doubles onto the
             }else{
                 s.OperateFunc(s, cString);
                 cString.clear();
-                cout << "after func top = " << s.peek() << endl;
             }
         }else{
             cString += c;
         }
-        //cout << "'" << c << "'";
     }
 }
 
