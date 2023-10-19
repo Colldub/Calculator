@@ -36,6 +36,9 @@ Designing what should be in my loop
 	i tried to design the seperation of the users statment before i decieded the best way to call the appropriate functions
 	this was a mistake because then i had to deconstruct it into peices for how i actually wanted to implitment the OperateFunc() function
 	
+-Problem
+	the way i call each function using if else statments after i pop the values does not work because if i dont call a function that has
+	need for both values im left with a poped val by mistake
 
-
+	i could fix this by popping each val as needed by each function which would be the easiest but also a lot of repeat code.
 	

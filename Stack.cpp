@@ -92,7 +92,8 @@ void Stack::PushAndSend(Stack& s){ //asks for a cin, pushes any doubles onto the
     }
 }
 
-void Stack::OperateFunc(Stack& s, string str) { //takes in a string for the operation to compleate, and then uses the stack to perform operation
+void Stack::OperateFunc(Stack& s, string str) { //takes in a string for the operation to compleate, 
+                                                //and then uses the stack to perform operation
                                                     
                                                                     //functions that dont need poped vals
         /////////////////////////////////////////////////////////////////////////////
@@ -114,38 +115,47 @@ void Stack::OperateFunc(Stack& s, string str) { //takes in a string for the oper
             cout << endl;
         }                                                             //functions that require poped vals  
         //////////////////////////////////////////////////////////////////////////////
-        double val1 = s.pop();
-        double val2 = s.pop();
+        double val1;
+        double val2;
 
         if(str == "swap"){
+            val1 = s.pop();
+            val2 = s.pop();
             s.push(val1);
             s.push(val2);
         
         }else if(str == "sq"){
+            val1 = s.pop();
             s.push(val1 * val1);
 
         }else if(str == "sqrt"){
+            val1 = s.pop();
             s.push(sqrt(val1));
 
         }else if(str == "dup"){
+            val1 = s.pop();
             s.push(val1);
             s.push(val1);
 
         }else if(str == "/"){
+            val1 = s.pop();
+            val2 = s.pop();
                 s.push(val2/val1);
 
         }else if(str == "-"){
+            val1 = s.pop();
+            val2 = s.pop();
                 s.push(val2 - val1);
 
         }else if(str == "+"){
+            val1 = s.pop();
+            val2 = s.pop();
                 s.push(val1 + val2);
 
         }else if(str == "*"){
+            val1 = s.pop();
+            val2 = s.pop();
                 s.push(val1 * val2);
-
-        }else{ //if none of the functions were touched return the two values
-            s.push(val2);
-            s.push(val1);
         }
 }
 
