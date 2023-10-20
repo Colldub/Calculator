@@ -62,7 +62,7 @@ void Stack::DisplayTop(){ //prints out the top of the stack along with a '>'
     }
 }
 
-void Stack::Print(){
+void Stack::Print(){ //prints out entire stack from top to bottom
     Node* tempPtr = new Node;
             tempPtr = top; //saves position of top for later
 
