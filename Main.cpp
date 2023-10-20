@@ -20,8 +20,8 @@ int main(){
     do{
         s.exit = false;
 
-        PushAndSend(s);
         s.DisplayTop();
+        PushAndSend(s);
 
     }while(s.exit == false);
 
