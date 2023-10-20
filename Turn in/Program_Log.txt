@@ -4,6 +4,9 @@
 	
 	Collin Worth	10-15-2023
 */
+
+//10-16
+
 functions:
 addition, multiplication, subtraction, division, square, square root, dup, swap, ps, quit;
 
@@ -41,4 +44,11 @@ Designing what should be in my loop
 	need for both values im left with a poped val by mistake
 
 	i could fix this by popping each val as needed by each function which would be the easiest but also a lot of repeat code.
+
+//10-19
+
+-Problem
+	i just read that i need to have my calculator logic in a seperate file from my class implementation
+	//
+	i successfully moved all my calculator functions to the main file.
 	

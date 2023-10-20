@@ -30,13 +30,22 @@ on the stack. For example, to calculate 3.2 + 2.4 on an RPN calculator you would
 	void Delete();
 		// deletes all values and top pointer 
 
+	void Print();
+		// Prints out stack elements until top == NULL; prints values like such:
+		// Stack Contents: 2 4 10
+
+	void DisplayTop();
+		// Prints Top of the stack along with required format for assignment like such:
+		// RPN 3 >
+
 //////////////////////////////////// Assignment based functions ///////////////////
     void PushAndSend(Stack&);
-		//
+		//asks for a cin, pushes any doubles onto the stack and sends to OperateFunc to perform any operations found 
+		//pushes and operations are performed in the order they appear 
 
     void OperateFunc(Stack&, string);
-		// 
+		//is called by PushAndSend when a operation is required;
+		//recives a string and filters through many else if statments comparing the string to the correct operation
+		//only performs one operation
 
-    void DisplayTop();
-		//
 
