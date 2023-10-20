@@ -18,14 +18,12 @@ public:
     void push(double);
     double pop();
     double peek();
-    void PushAndSend(Stack&);
-    void OperateFunc(Stack&, string);
     void DisplayTop();
+    void Print();
     void Delete();
 
     bool exit;
 
-private:
     struct Node {
         double data;
         Node* next;
